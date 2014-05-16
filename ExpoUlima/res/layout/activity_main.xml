@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ImageView 
+        android:id="@+id/iviLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+    <ImageView 
+        android:id="@+id/iviUno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/star_big_on"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/iviLogo"/>
+    <TextView 
+        android:id="@+id/tviInformacionGeneral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Información General"
+        android:layout_below="@id/iviLogo"
+        android:layout_toRightOf="@id/iviUno"/>
+    <ImageView 
+        android:id="@+id/iviDos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/star_big_on"
+        android:layout_below="@id/iviUno"
+        android:layout_alignParentRight="true"/>
+    <TextView 
+        android:id="@+id/tviInscribete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inscribete"
+        android:layout_toLeftOf="@id/iviDos"
+        android:layout_below="@id/iviUno"/>
+
+</RelativeLayout>
